@@ -34,7 +34,20 @@ function addButtonsToPosts(){
             });
             let checkBtn = genButton('Check');
             checkBtn.onclick = function(){
-                console.log(a[0]);
+                fetch('https://ibetter.herokuapp.com/api/detect/?url='+a[0])
+                  .then(function(response) {
+                    return response.json();
+                  })
+                  .then(function(myJson) {
+                    let pred = +myJson.our_prediction.toFixed(1);
+                    if(pred>60){
+                        checkBtn.classList.add('real');
+                    } else {
+                        checkBtn.classList.add('fake');
+                    }
+                    checkBtn.innerText = pred+"%";
+                    console.log(myJson);
+                  });
             }
 
 

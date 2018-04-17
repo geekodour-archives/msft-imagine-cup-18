@@ -25,3 +25,13 @@
     border: none;
     margin-right: 1em;
 }
+
+.ibetter_button.real {
+    background: #00b894;
+    color: #fff;
+}
+
+.ibetter_button.fake {
+    background: #ff7675;
+    color: #fff;
+}
