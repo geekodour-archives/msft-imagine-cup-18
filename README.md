@@ -2,5 +2,6 @@
 
 Adds two buttons, `check` and `similar`
 
-Screenshot:
 ![](1.png)
+![](2.png)
+![](3.png)
