@@ -3,16 +3,25 @@
  **/
 
 
-div._1dwg._1w_m._q7o>._4r_y {
+/*div._1dwg._1w_m._q7o>._4r_y {*/
+.ibetter_container {
     padding: 2em;
     position: relative;
 }
-/*
-div._1dwg._1w_m._q7o>div {
-    position: relative;
-    padding: 2em;
-    margin-bottom: 2em;
-}
+
 .ibetter_div {
-    position: relative;
-}*/
+    margin-bottom: 2em;
+    display: flex;
+    justify-content: center;
+}
+
+.ibetter_button {
+    padding: 0.5em 0 0.5em 0;
+    width: 40%;
+    background: #3b5998;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    margin-right: 1em;
+}
