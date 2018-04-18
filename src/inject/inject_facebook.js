@@ -81,7 +81,7 @@ function addButtonsToPosts(){
                     } else {
                         checkBtn.classList.add('fake');
                     }
-                    checkBtn.innerText = pred+"%";
+                    checkBtn.innerText = pred;
                 } else {
                     fetch('https://ibetter.herokuapp.com/api/detect/?url='+a[0])
                       .then(function(response) {
@@ -95,7 +95,7 @@ function addButtonsToPosts(){
                         } else {
                             checkBtn.classList.add('fake');
                         }
-                        checkBtn.innerText = pred+"%";
+                        checkBtn.innerText = pred;
                       });
                 }
             }
@@ -162,7 +162,7 @@ chrome.extension.sendMessage({}, function(response) {
                     } else {
                         checkBtn.classList.add('fake');
                     }
-                    checkBtn.innerText = pred+"%";
+                    checkBtn.innerText = pred;
                 } else {
                     fetch('https://ibetter.herokuapp.com/api/detect/?url='+a[0])
                       .then(function(response) {
@@ -176,7 +176,7 @@ chrome.extension.sendMessage({}, function(response) {
                         } else {
                             checkBtn.classList.add('fake');
                         }
-                        checkBtn.innerText = pred+"%";
+                        checkBtn.innerText = pred;
                       });
                 }
             }
