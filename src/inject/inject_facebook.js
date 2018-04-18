@@ -75,7 +75,7 @@ function addButtonsToPosts(){
 
             checkBtn.onclick = function(){
                 if(postInfo.similar_results){
-                    let pred = +postInfo.our_prediction.toFixed(1);
+                    let pred = +postInfo.our_prediction.toFixed(2);
                     if(pred>50){
                         checkBtn.classList.add('real');
                     } else {
@@ -89,7 +89,7 @@ function addButtonsToPosts(){
                       })
                       .then(function(myJson) {
                         postInfo = myJson;
-                        let pred = +postInfo.our_prediction.toFixed(1);
+                        let pred = +postInfo.our_prediction.toFixed(2);
                         if(pred>50){
                             checkBtn.classList.add('real');
                         } else {
@@ -156,7 +156,7 @@ chrome.extension.sendMessage({}, function(response) {
 
             checkBtn.onclick = function(){
                 if(postInfo.similar_results){
-                    let pred = +postInfo.our_prediction.toFixed(1);
+                    let pred = +postInfo.our_prediction.toFixed(2);
                     if(pred>50){
                         checkBtn.classList.add('real');
                     } else {
@@ -170,7 +170,7 @@ chrome.extension.sendMessage({}, function(response) {
                       })
                       .then(function(myJson) {
                         postInfo = myJson;
-                        let pred = +postInfo.our_prediction.toFixed(1);
+                        let pred = +postInfo.our_prediction.toFixed(2);
                         if(pred>50){
                             checkBtn.classList.add('real');
                         } else {
